@@ -1,0 +1,142 @@
+/* $Id: lips.css 568956 2012-07-08 12:15:26Z bastb $ */
+.lips-settings-container, 
+.lips-settings-control,
+.lips-top {
+	position: relative;
+}
+
+.lips-static,
+.lips-description-container {
+	clear: both;
+}
+
+.lips-meta {
+	margin-left: 1em;
+}
+
+.lips-meta-container {
+	display: inline;
+}
+
+.lips-description {
+	font-style: italic;
+}
+
+.lips-static,
+.lips-static-element-container,
+.lips-static-element {
+	position: relative;
+	float: left;
+}
+
+.lips-static-element {
+	width: 14em;
+	margin-right: 1em;
+}
+
+.lips-about {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-weight: bold;
+}
+
+.lips-help {
+	background-color: #333;
+	display: none;
+	position: absolute;
+	top: 5%;
+	right: 0;
+	height: 80%;
+	width: 25%;
+	padding: 10px;
+	z-index: 2;
+}
+
+.lips-new-page {
+	font-weight: bold;
+}
+
+.lips-about-donate {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 2px;
+}
+
+.lips-close-help {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+}
+
+.lips-help-text {
+	padding: 1em;
+	color: white;
+}
+
+.lips-err-detail {
+	color: red;
+	font-weight: bold;
+}
+
+.lips-err-monospace {
+	font-family: "Courier New", "Lucida Console";
+}
+
+.lips-reset-oauth {
+}
+
+li.ui-state-active > a {
+	font-weight: bold;
+	color: black;
+}
+
+/* The lips-identified-never-synced thing is copied from 
+  http://www.sitepoint.com/pure-css3-speech-bubbles/ 
+*/
+p.lips-identified-never-synced {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 350px;
+	height: 75px;
+	text-align: center;
+	padding: 1em;
+	background-color: lightYellow;
+	border: 2px solid #E6DB55;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+	z-index: 3;
+}
+
+#lips-speech-copy {
+	display: none;	
+}
+
+div.lips-virgin {
+	background-color: #E4E4E4;
+}
+
+.lips-virgin:after {
+	content: "Required";
+	font-weight: bold;
+	color: black;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 1em;
+}
+
+.lips-required-key:after {
+	content: "  *";
+}
+
+body {
+	z-index: 0;
+}
